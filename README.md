@@ -14,7 +14,8 @@ Learn basics of fragment shader
 
 
 ## VSCode config
-update the frag.code-workspace to change the channels used to render in canvas viewer
+Open the workspace frag.code-workspace 
+update this file to change the channels/textures used by Glsl-canvas to render in viewer
 	
 	{
 		"folders": [
