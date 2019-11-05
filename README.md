@@ -10,7 +10,7 @@ Learn basics of fragment shader
 ## Prerequisites
 - Install [glslviewer](https://github.com/patriciogonzalezvivo/glslViewer)
 - Install VScode
-- Install glsl canvas viewer extension
+- Install Glsl-canvas [glsl-canvas](https://marketplace.visualstudio.com/items?itemName=circledev.glsl-canvas)
 
 
 ## VSCode config
