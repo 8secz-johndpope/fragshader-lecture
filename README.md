@@ -9,7 +9,29 @@ Learn basics of fragment shader
 
 ## Prerequisites
 - Install [glslviewer](https://github.com/patriciogonzalezvivo/glslViewer)
+- Install VScode
+- Install glsl canvas viewer extension
 
+
+## VSCode config
+update the frag.code-workspace to change the channels used to render in canvas viewer
+	
+	{
+		"folders": [
+			{
+				"path": "."
+			}
+		],
+		"settings": {
+			"glsl-canvas.textures": {
+				"0": "./girl.jpg",
+				"2": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-1.png",
+				"1": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-2.jpg",        
+			}
+		}
+	}
+
+![](screenshot.jpg)
 ## Hello world
 Show red pixels
 
