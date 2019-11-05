@@ -1,3 +1,7 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
 uniform vec2 u_resolution;
 
 const vec2 CENTER = vec2(0.5, 0.5);
