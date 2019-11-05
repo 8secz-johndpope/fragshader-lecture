@@ -38,13 +38,15 @@ void main() {
 
     int ROTATION_UNIT_COUNT = int(radians(abs(rotationDegree)) / ROTATION_UNIT_ANGLE);
 
+    const int MAX_ITERATIONS = 100;
+
     if(rotationSign != 0.0 && ROTATION_UNIT_COUNT > 1) {
         color = color / float(ROTATION_UNIT_COUNT);
 
-        for(int i=1; i<ROTATION_UNIT_COUNT; ++i) {
+        for(int i = 1; i < MAX_ITERATIONS; i++){
             vec2 uvR = uvRotational + rotationSign * vec2(0.0, ROTATION_UNIT_ANGLE * float(i));
             vec4 c = texture2D(u_tex0, fromRotational(uvR));
-            color = color + c / float(ROTATION_UNIT_COUNT);
+            color = color + c / float(ROTATION_UNIT_COUNT); 
         }
     }
 
